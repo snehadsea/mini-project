@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link rel="stylesheet" href="styles1/admin.css">
+
+        <title>Admin</title>
+    </head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top nav">
+        <div class="container-fluid">
+            <h3 class="h1">RedStore</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Signup</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout"  onclick="logout();" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Admin
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Add Products</a>
+            <a class="dropdown-item" href="#">orders</a>
+            <a class="dropdown-item" href="#">cards</a>
+        </div>
+    </div>
+
+    <!-- add products -->
+
+    <h1 class="pro">Add products</h1>
+    <div class="add">
+        <div id="product">
+
+            <div class="form-group">
+                <label>Product Image</label>
+                <input type="file" onfocus="this.value=''" class="form-control-file" id="image">
+            </div>
+
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" onfocus="this.value=''" class="form-control" id="name" placeholder="name">
+            </div>
+
+            <div class="form-group">
+                <label>Prize</label>
+                <input type="text" onfocus="this.value=''" class="form-control" id="prize" placeholder="prize">
+            </div>
+        
+            <button type="submit" onclick="show();" class="btn btn-primary text-align">Add</button>
+            <button type="submit" onclick="get();" class="btn btn-success text-align">GetData</button>
+            <button type="submit" onclick="del();" class="btn btn-warning text-align">Delete</button>
+            <button type="submit" onclick="edit();" class="btn btn-danger text-align">Edit</button>
+        </div>
+    </div>
+</body>
+
+<script src="scripts1/admin.js"></script>
+<script>
+    const logout = () => {
+        alert("Are u sure u want to logout")
+        window.location.href = "index.html"
+    };
+</script>
+</head>
+
+</html>

@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping cart</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+	<!-- custom css -->
+<link rel="stylesheet" href="styles1/style.css">
+</head>
+
+<body onload='loaddata()'>
+
+<nav class="navbar navbar-expand-md navbar-light sticky-top nav">
+	<div class="container-fluid">
+		<h3 class="h1">RedStore</h3>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+		data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="signup.html">Signup</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="admin.html">Admin</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cart.html">Cart</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="logout" onclick="logout();" href="#">logout</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- slider -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel"  data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel"  data-slide-to="1"></li>
+		<li data-target="#myCarousel"  data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item  active">
+			<img class="d-block w-100" src="images/laptop.jpg" alt="First slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="images/shoes.jpg" alt="Second slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="images/laptop3.jpg" alt="Third slide">
+		</div>
+	</div>
+	<a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a href="#myCarousel" class="carousel-control-next" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid py-5">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead">India’s Ultimate Online Shopping Site Redstore vision is to create India’s most reliable and frictionless commerce
+			ecosystem that creates life-changing experiences for buyers and sellers
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#"><button type="button" class="btn btn-lg text-center">Shop</button></a>
+		</div>
+	</div>
+</div>
+ 
+
+<div class="container-fluid padding">
+	<div class="row padding m-10">
+		<div class="col-md-12 col-lg-6">
+			<h2 class="h2">About Redstore</h2>
+			<p class="p">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellat, iusto hic minus obcaecati porro commodi, pariatur odio beatae velit 
+				esse quasi aliquam reprehenderit, corporis ipsa ex est dolore ut?
+			</p>
+			<p class="p">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum quo. 
+				Quisquam animi cum incidunt beatae distinctio modi totam non! Consequatur velit animi necessitatibus perferendis ab dolorum rerum nisi et?
+			</p>
+			<!-- <a href="#" class="btn btn-lg btn1">Learn more</a> -->
+			<a href="#"><button type="button" class="btn btn-lg btn1">Learn more</button></a>
+		</div>
+		<div class="col-lg-6">
+			<img src="images/watch4.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid products">
+	<!-- <div class="jumbotron"> -->
+		<h3 class="text-center h3">Products</h3>
+		<div class="row" id="cards">
+
+			<!-- <div class="col-md-3 col-sm-6">
+			<div class="card-block">
+				<img class="card-img-top" src="images/g_img2.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			</div> -->
+
+			<!-- <div class="col-md-3 col-sm-6">
+			<div class="card-block">
+				<img class="card-img-top" src="images/watch4.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+						content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+		</div> -->
+			
+</div>
+</div>
+<hr class="my-4">
+ </div> 
+
+
+<!-- connect -->
+<div class="container-fluid  padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h3 class="text-center h3">Connect</h3>
+	</div>
+<div class="col-12 social padding">
+	<a href="#"><i class="fab fa-facebook"></i></a>
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-google-plus-g"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+
+</div>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-md-4">
+		<h2 class="h3">Redstore</h2>
+		<hr class="Light">
+		<p>555-555-555</p>
+		<p>redstore@gmail.com</p>
+		<p>100 street Shivajinagar</p>
+		<p>Bangalore,Karnataka,0000</p>
+	</div>
+
+	<div class="col-md-4">
+		<hr class="Light">
+		<h4 style="color:#4447eb;">Our Services</h4>
+		<hr class="Light">
+		<p>Monday:9am-5pm</p>
+		<p>Monday:10am-4pm</p>
+		<p>Sunday:closed</p>
+	</div>
+
+	<div class="col-md-4">
+		<hr class="Light">
+		<h4 style="color:#4447eb;">Our Services in Bangalore</h4>
+		<hr class="Light">
+		<p>Koramanagala,344-53-343</p>
+		<p>Banaswadi,344-756-343</p>
+		<p>Ulsoor,344-465-343</p>
+		<p>IndiraNagar,344-56-343</p>
+	</div>
+
+
+<div class="col-12">
+	<hr class="light-100">
+	<h5>&copy; Redstore.com</h5>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+
+<script src="scripts1/index.js"></script>
+
+<script>
+	const logout = ()=> {
+	 alert("Are u sure u want to logout")
+    window.location.href = "login.html"
+	};
+</script>
+
+</html>
+
+
+

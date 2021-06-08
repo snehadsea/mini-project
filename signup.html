@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="styles1/signup.css">
+
+    <title>Signup</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top nav">
+        <div class="container-fluid">
+            <h3 class="h1">RedStore</h3>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="signup.html">signup</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout"  onclick="logout();" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="centerForm">
+        <!-- <form id="form" autocomplete="off"> -->
+        <div id="sign-up" autocomplete="off">
+            <h1>SIGN UP FORM</h1>
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                </div>
+                <input type="email" id="email" name="email" class="form-control" placeholder="E-mail">
+            </div>
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" name="password" id="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+            </div>
+
+            <br>
+
+            <button type="submit" id="btn" class="btn btn-primary">SignUp</button>
+        </div>
+    </div>
+
+    <script src="scripts1/signup.js"></script>
+    <script>
+        const logout = () => {
+            alert("Are u sure u want to logout")
+            window.location.href = "index.html"
+        };
+    </script>
+
+</body>
+</html>
